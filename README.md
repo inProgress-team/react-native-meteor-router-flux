@@ -12,6 +12,8 @@
 
 # react-native-meteor-router-flux
 
+Plugin for [react-native-meteor](https://github.com/inProgress-team/react-native-meteor).
+
 [Custom scene renderer](https://github.com/aksonov/react-native-router-flux#switch-new-feature) which allows to select tab scene to show depending from app state. It could be useful for authentication, restricted scenes, etc.
 
 ## Install
