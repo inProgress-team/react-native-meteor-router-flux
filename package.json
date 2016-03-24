@@ -1,0 +1,32 @@
+{
+  "name": "react-native-meteor",
+  "version": "1.0.0-beta1",
+  "description": "Full Meteor Client for React Native - Plugin for react-native-router-flux",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inProgress-team/react-native-meteor-router-flux.git"
+  },
+  "keywords": [
+    "react-component",
+    "ddp",
+    "meteor",
+    "react",
+    "react-native",
+    "ios",
+    "android",
+    "react-native-router-flux"
+  ],
+  "author": "Théo Mathieu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inProgress-team/react-native-meteor-router-flux/issues"
+  },
+  "homepage": "https://github.com/inProgress-team/react-native-meteor-router-flux#readme",
+  "dependencies": {
+
+  }
+}
