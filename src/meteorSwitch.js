@@ -23,12 +23,14 @@ module.exports = (getMeteorData) => {
 
           if (navigationState.key != navState.children[navState.index].key){
               Actions[selectedKey]();
+              this.setState({navigationState});
           }
-          this.setState({navigationState});
         };
 
         this.onChange();
-        Meteor.getData().onChange(this.onChange);
+        Meteor.getData().onChange(()=>{
+          this.onChange();
+        });
       }
       componentWillReceiveProps(props) {
         this.onChange(props);

@@ -1,6 +1,6 @@
 {
   "name": "react-native-meteor-router-flux",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0",
   "description": "Full Meteor Client for React Native - Plugin for react-native-router-flux",
   "main": "src/index.js",
   "scripts": {
