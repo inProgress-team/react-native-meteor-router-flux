@@ -12,6 +12,8 @@ module.exports = (getMeteorData) => {
       componentWillMount() {
         this.onChange = (props)=>{
 
+          const hasNewProps = !!props;
+
           props = props && props.name ? props : this.props;
 
           const navState = props.navigationState;
@@ -20,11 +22,14 @@ module.exports = (getMeteorData) => {
           const selected = navState.children.filter(el=>el.sceneKey==selectedKey) || console.error("key="+selectedKey+" doesn't exist");
           const navigationState = selected[0] || console.error("Cannot find scene with key="+selectedKey);
 
-
           if (navigationState.key != navState.children[navState.index].key){
               Actions[selectedKey]();
-              this.setState({navigationState});
           }
+
+          if(hasNewProps) {
+            this.setState({navigationState});
+          }
+
         };
 
         this.onChange();
