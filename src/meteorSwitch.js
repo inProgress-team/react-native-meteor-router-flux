@@ -32,7 +32,7 @@ module.exports = (getMeteorData) => {
 
         };
 
-        this.onChange();
+        this.onChange(this.props);
         Meteor.getData().onChange(()=>{
           this.onChange();
         });
