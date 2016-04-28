@@ -22,7 +22,7 @@ module.exports = (getMeteorData) => {
           const selected = navState.children.filter(el=>el.sceneKey==selectedKey) || console.error("key="+selectedKey+" doesn't exist");
           const navigationState = selected[0] || console.error("Cannot find scene with key="+selectedKey);
 
-          if (navigationState.key != navState.children[navState.index].key){
+          if (!navigationState || navigationState.key != navState.children[navState.index].key){
               Actions[selectedKey]();
           }
 
