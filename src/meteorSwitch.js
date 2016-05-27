@@ -1,4 +1,4 @@
-import React, {Component} from 'react-native';
+import React, { Component } from 'react';
 import { DefaultRenderer, Actions } from 'react-native-router-flux';
 import Meteor from 'react-native-meteor';
 
@@ -45,10 +45,10 @@ module.exports = (getMeteorData) => {
       }
       render(){
           if (this.state.navigationState){
-              return <DefaultRenderer navigationState={this.state.navigationState} />;
-          } else {
-              return null;
+              return <DefaultRenderer navigationState={this.state.navigationState} onNavigate={this.props.onNavigate} />;
           }
+
+          return null;
       }
   }
 
