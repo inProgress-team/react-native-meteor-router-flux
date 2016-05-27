@@ -10,6 +10,11 @@
 [license-badge]: https://img.shields.io/dub/l/vibe-d.svg
 [license]: https://github.com/inProgress-team/react-native-meteor-router-flux/blob/master/LICENSE
 
+# DEPRECATED
+
+This plugin is deprecated since react-native-meteor createContainer works with react-native-router-flux Switch component (see https://github.com/inProgress-team/react-native-meteor/blob/master/README.md#react-native-router-flux) for informations
+
+
 # react-native-meteor-router-flux
 
 Plugin for [react-native-meteor](https://github.com/inProgress-team/react-native-meteor).
